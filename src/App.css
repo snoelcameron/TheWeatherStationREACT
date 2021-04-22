@@ -1,0 +1,136 @@
+body {
+  font-family: "NeueMontreal-Regular";
+  color: #ffffff;
+  margin: auto;
+  background: linear-gradient(#ffc10d, #fe9f00);
+}
+
+.Weather h1 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.Weather h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.Container {
+  display: block;
+  max-width: 678px;
+}
+
+.Header {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 30px auto 70px auto;
+  text-align: center;
+  font-size: 30px;
+}
+#temp {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 120px;
+}
+.Weather form {
+  margin: 40px 0;
+  height: 58px;
+}
+
+.Weather input[type="text"] {
+  width: 395px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 29px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.Weather input[type="submit"] {
+  width: 90px;
+  height: 58px;
+  padding: 15px;
+  margin: 0 5px;
+  color: #494949;
+  background-color: #ffffff;
+  border-radius: 29px;
+  border: 1px solid #ffffff;
+}
+
+.Weather input[type="submit"]:hover {
+  background-color: #494949;
+  color: #ffffff;
+  border-radius: 29px;
+  border: 1px solid;
+  transition: all 0.3s ease 0s;
+}
+
+.WeatherUpdate .temperature {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 120px;
+}
+
+.WeatherUpdate .units {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  top: -36px;
+}
+
+#fahrenheitLink:hover {
+  font-weight: 100;
+  font-size: 16px;
+  color: #494949;
+  transition: all 200ms ease-in-out;
+}
+
+.WeatherUpdate .icon {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.Forecast .ForecastCard {
+  width: 120px;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  background-color: red;
+  border-radius: 25px;
+  border-color: transparent;
+}
+
+.Forecast .col {
+  width: 120px;
+  margin: 0 20px;
+  background-color: transparent;
+}
+.Forecast .card {
+  width: 120px;
+  margin: auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+.ForecastDay .ForecastTemperature {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 10px;
+  margin: 10px auto;
+}
+
+.ForecastDay .Day {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 10px;
+  margin: 10px auto;
+}
+
+.Footer {
+  margin: 30px;
+  text-align: center;
+}
