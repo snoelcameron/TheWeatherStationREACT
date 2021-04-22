@@ -8,6 +8,7 @@ export default function Footer() {
         <a
           href="https://github.com/snoelcameron/TheWeatherStation"
           target="_blank"
+          rel="noreferrer"
         >
           Open-source code,{" "}
         </a>
@@ -22,6 +23,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/sarah-noel-960740b2/"
           target="_blank"
+          rel="noreferrer"
         >
           Sarah Noel
         </a>{" "}
