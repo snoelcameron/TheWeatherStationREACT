@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+
 export default function WeatherIcon(props) {
   let icon = "";
   if (props.icon === "01d" || props.icon === "01n") {
@@ -27,5 +28,5 @@ export default function WeatherIcon(props) {
   } else if (props.icon === "13d" || props.icon === "13n") {
     icon = "images/snowsmall.png";
   }
-  return <img src={icon} alt="weather" />;
+  return <img src={icon} alt="weather icon" />;
 }

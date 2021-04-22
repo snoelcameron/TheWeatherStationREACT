@@ -22,7 +22,7 @@ export default function WeatherUpdate(props) {
         </div>
         <div className="col-6">
           <div className="icon">
-            <WeatherIcon code={props.data.icon} size={"250px"} />
+            <WeatherIcon src={props.data.icon} size={364} />
           </div>
         </div>
       </div>
