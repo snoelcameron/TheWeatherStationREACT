@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-export default function WeatherIcon(props) {
-  let icon = "";
+export default function ForecastIcon(props) {
+  let iconForecast = "";
   if (props.icon === "01d" || props.icon === "01n") {
-    icon = "images/suncircle.png";
+    iconForecast = "images/sunsmall.png";
   } else if (props.icon === "02n" || props.icon === "02d") {
-    icon = "images/suncircle.png";
+    iconForecast = "images/sunsmall.png";
   } else if (
     props.icon === "03d" ||
     props.icon === "03n" ||
@@ -15,19 +15,19 @@ export default function WeatherIcon(props) {
     props.icon === "50d" ||
     props.icon === "50n"
   ) {
-    icon = "images/cloudcircle.png";
+    iconForecast = "images/cloudsmall.png";
   } else if (
     props.icon === "10n" ||
     props.icon === "10d" ||
     props.icon === "9n" ||
     props.icon === "9d"
   ) {
-    icon = "images/raincircle.png";
+    iconForecast = "images/rainsmall.png";
   } else if (props.icon === "11d" || props.icon === "11n") {
-    icon = "images/thundercircle.png";
+    iconForecast = "images/thundersmall.png";
   } else if (props.icon === "13d" || props.icon === "13n") {
-    icon = "images/snowcircle.png";
+    iconForecast = "images/snowsmall.png";
   }
 
-  return <img src={icon} alt="weather icon" />;
+  return <img src={iconForecast} alt="Forecast icon" />;
 }

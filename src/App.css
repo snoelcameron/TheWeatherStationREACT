@@ -68,26 +68,18 @@
   transition: all 200ms ease-in-out;
 }
 
-.WeatherUpdate .icon {
-  text-align: center;
-  padding: 20px 0 10px;
-}
-
-.Forecast .col {
-  margin: 0px 30px;
-  background-color: transparent;
-}
 .Forecast .card {
   width: 120px;
   height: 120px;
   display: flex;
   margin: auto;
   padding: 0;
-  background-color: red;
+  background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
 }
-.ForecastDay .ForecastTemperature {
+
+.ForecastTemperature {
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
@@ -95,7 +87,7 @@
   margin: 10px auto;
 }
 
-.ForecastDay .Day {
+.ForecastDay {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
