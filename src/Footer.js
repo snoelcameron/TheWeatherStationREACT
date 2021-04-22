@@ -12,7 +12,7 @@ export default function Footer() {
           Open-source code,{" "}
         </a>
         <a
-          href="https://suspicious-hypatia-4e7f11.netlify.app/"
+          href="https://www.wonderful-bohr-ec4c13.netlify.app"
           target="_blank"
           rel="noreferrer"
         >

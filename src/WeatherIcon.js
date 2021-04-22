@@ -1,33 +1,31 @@
 import React from "react";
 import "./App.css";
-
 export default function WeatherIcon(props) {
-  let WeatherIcon = "";
-
-  if (icon === "01d" || icon === "01n") {
-    WeatherIcon = "images/sunsmall.png";
-  } else if (icon === "02n" || icon === "02d") {
-    WeatherIcon = "images/sunsmall.png";
+  let icon = "";
+  if (props.icon === "01d" || props.icon === "01n") {
+    icon = "images/sunsmall.png";
+  } else if (props.icon === "02n" || props.icon === "02d") {
+    icon = "images/sunsmall.png";
   } else if (
-    icon === "03d" ||
-    icon === "03n" ||
-    icon === "04d" ||
-    icon === "04n" ||
-    icon === "50d" ||
-    icon === "50n"
+    props.icon === "03d" ||
+    props.icon === "03n" ||
+    props.icon === "04d" ||
+    props.icon === "04n" ||
+    props.icon === "50d" ||
+    props.icon === "50n"
   ) {
-    WeatherIcon = "images/cloudsmall.png";
+    icon = "images/cloudsmall.png";
   } else if (
-    icon === "10n" ||
-    icon === "10d" ||
-    icon === "9n" ||
-    icon === "9d"
+    props.icon === "10n" ||
+    props.icon === "10d" ||
+    props.icon === "9n" ||
+    props.icon === "9d"
   ) {
-    WeatherIcon = "images/rainsmall.png";
-  } else if (icon === "11d" || icon === "11n") {
-    WeatherIcon = "images/thundersmall.png";
-  } else if (icon === "13d" || icon === "13n") {
-    WeatherIcon = "images/snowsmall.png";
+    icon = "images/rainsmall.png";
+  } else if (props.icon === "11d" || props.icon === "11n") {
+    icon = "images/thundersmall.png";
+  } else if (props.icon === "13d" || props.icon === "13n") {
+    icon = "images/snowsmall.png";
   }
-  return WeatherIcon;
+  return <img src={icon} alt="weather" />;
 }
