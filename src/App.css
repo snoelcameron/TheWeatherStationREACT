@@ -63,7 +63,7 @@
 
 #fahrenheitLink:hover {
   font-weight: 100;
-  font-size: 16px;
+  font-size: 20px;
   color: #494949;
   transition: all 200ms ease-in-out;
 }
@@ -83,16 +83,12 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
-  padding: 0 10px;
-  margin: 10px auto;
 }
 
 .ForecastDay {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
-  padding: 0 10px;
-  margin: 10px auto;
 }
 
 .Footer {

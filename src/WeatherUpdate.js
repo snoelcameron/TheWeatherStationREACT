@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherConversion from "./WeatherConversion";
+import backgroundColor from "./backgroundColor";
 import "./App.css";
 
 export default function WeatherUpdate(props) {

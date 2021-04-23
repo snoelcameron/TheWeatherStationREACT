@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-export default function WeatherIcon(props) {
-  let icon = "";
+export default function backgroundColor(props) {
+  let backgroundGradient = "";
   if (props.icon === "01d" || props.icon === "01n") {
-    icon = "images/suncircle.png";
+    backgroundGradient = "linear-gradient(#ffc10d, #fe9f00)";
   } else if (props.icon === "02n" || props.icon === "02d") {
-    icon = "images/suncloudcircle.png";
+    backgroundGradient = "linear-gradient(#ffc10d, #fe9f00)";
   } else if (
     props.icon === "03d" ||
     props.icon === "03n" ||
@@ -15,19 +15,19 @@ export default function WeatherIcon(props) {
     props.icon === "50d" ||
     props.icon === "50n"
   ) {
-    icon = "images/cloudcircle.png";
+    backgroundGradient = "linear-gradient(#3E7DBA, #2D52A7)";
   } else if (
     props.icon === "10n" ||
     props.icon === "10d" ||
     props.icon === "9n" ||
     props.icon === "9d"
   ) {
-    icon = "images/raincircle.png";
+    backgroundGradient = "linear-gradient(#a4abbe, #4f5077)";
   } else if (props.icon === "11d" || props.icon === "11n") {
-    icon = "images/thundercircle.png";
+    backgroundGradient = "linear-gradient(#a4abbe, #4f5077)";
   } else if (props.icon === "13d" || props.icon === "13n") {
-    icon = "images/snowcircle.png";
+    backgroundGradient = "linear-gradient(#83bcc8, #628a9d)";
   }
 
-  return <img src={icon} alt="weather icon" />;
+  return backgroundGradient;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import ForecastIcon from "./ForecastIcon";
+import Card from "react-bootstrap/Card";
 import "./App.css";
 
 export default function ForecastDay(props) {
@@ -19,9 +20,13 @@ export default function ForecastDay(props) {
 
   return (
     <div className="ForecastCard">
-      <div className="ForecastTemperature"> {maxTemp()}</div>{" "}
-      <div className="ForecastDay"> {day()} </div>
-      <ForecastIcon icon={props.data.weather[0].icon} size={120} />
+      <Card className="ForecastCard">
+        <ForecastIcon icon={props.data.weather[0].icon} size={120} />
+        <Card.ImgOverlay>
+          <Card.Title className="ForecastTemperature"> {maxTemp()}</Card.Title>
+          <Card.Text className="ForecastDay"> {day()} </Card.Text>
+        </Card.ImgOverlay>
+      </Card>
     </div>
   );
 }

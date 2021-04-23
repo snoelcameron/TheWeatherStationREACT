@@ -40,6 +40,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <WeatherUpdate data={weatherInfo} />
+        <backgroundColor />
         <form onSubmit={handleSubmit}>
           <div>
             <input

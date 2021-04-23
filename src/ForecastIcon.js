@@ -29,5 +29,5 @@ export default function ForecastIcon(props) {
     iconForecast = "images/snowsmall.png";
   }
 
-  return <img src={iconForecast} alt="Forecast icon" />;
+  return <img src={iconForecast} alt="Forecast icon" width={120} />;
 }
