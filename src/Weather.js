@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherUpdate from "./WeatherUpdate";
+import backgroundColor from "./backgroundColor";
 import Forecast from "./Forecast";
 import "./App.css";
 
