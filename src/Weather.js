@@ -51,6 +51,7 @@ export default function Weather(props) {
               onChange={handleCityChange}
             />
             <input type="submit" value="Search" className="submit" />
+            <input type="button" value="Current" className="geolocation" />
           </div>
         </form>
         <Forecast coordinates={weatherInfo.coordinates} />

@@ -18,13 +18,22 @@ export default function ForecastDay(props) {
     return `${temperature}°`;
   }
 
+  function minTemp() {
+    let temperature = Math.round(props.data.temp.min);
+    return `${temperature}°`;
+  }
+
   return (
     <div className="ForecastCard">
       <Card className="ForecastCard">
         <ForecastIcon icon={props.data.weather[0].icon} size={120} />
-        <Card.ImgOverlay>
+        <Card.ImgOverlay id="cardSize">
           <Card.Title className="ForecastTemperature"> {maxTemp()}</Card.Title>
-          <Card.Text className="ForecastDay"> {day()} </Card.Text>
+          <Card.Title className="ForecastTemperatureLow">
+            {" "}
+            {minTemp()}
+          </Card.Title>
+          <Card.Text className="ForecastDate"> {day()} </Card.Text>
         </Card.ImgOverlay>
       </Card>
     </div>

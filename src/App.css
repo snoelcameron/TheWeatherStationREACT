@@ -20,6 +20,13 @@
   height: 58px;
 }
 
+.WeatherUpdate h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
 .Weather input[type="text"] {
   width: 395px;
   padding: 15px;
@@ -29,7 +36,8 @@
   border: 1px solid #ffffff;
 }
 
-.Weather input[type="submit"] {
+.Weather input[type="submit"],
+input[type="button"] {
   width: 90px;
   height: 58px;
   padding: 15px;
@@ -40,7 +48,8 @@
   border: 1px solid #ffffff;
 }
 
-.Weather input[type="submit"]:hover {
+.Weather input[type="submit"]:hover,
+input[type="button"]:hover {
   background-color: #494949;
   color: #ffffff;
   border-radius: 29px;
@@ -68,6 +77,10 @@
   transition: all 200ms ease-in-out;
 }
 
+#cardSize {
+  padding: 15px;
+}
+
 .Forecast .card {
   width: 120px;
   height: 120px;
@@ -79,16 +92,23 @@
   border-color: transparent;
 }
 
-.ForecastTemperature {
+.Forecast .ForecastTemperature {
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
 }
 
-.ForecastDay {
+.Forecast .ForecastTemperatureLow {
+  color: #ffffff;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Forecast .ForecastDate {
   color: #ffffff;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .Footer {
