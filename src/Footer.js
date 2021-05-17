@@ -19,7 +19,14 @@ export default function Footer() {
         >
           Netlify{" "}
         </a>
-        By{" "}
+        Also, go view my{" "}
+        <a
+          href="https://confident-booth-188282.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Dictionary App!{" "}
+        </a>
         <a
           href="https://www.linkedin.com/in/sarah-noel-960740b2/"
           target="_blank"
