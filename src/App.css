@@ -10,11 +10,7 @@
   text-align: center;
   font-size: 30px;
 }
-#temp {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 120px;
-}
+
 .Weather form {
   margin: 40px 0;
   height: 58px;
@@ -68,13 +64,6 @@ input[type="button"]:hover {
   font-weight: 400;
   font-size: 20px;
   top: -36px;
-}
-
-#fahrenheitLink:hover {
-  font-weight: 100;
-  font-size: 20px;
-  color: #494949;
-  transition: all 200ms ease-in-out;
 }
 
 #cardSize {

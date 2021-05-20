@@ -20,16 +20,14 @@ export default function WeatherConversion(props) {
 
   if (unit === "celsius") {
     return (
-      <div id="fahrenheitLink">
-        <div className="temp" id="temp">
-          {Math.round(props.celsius)}
-        </div>
+      <div>
+        <div className="temp">{Math.round(props.celsius)}</div>
         <div className="units">
           <a href="/" id="celsiusLink">
             °C
           </a>{" "}
           |{" "}
-          <a href="/" onClick={fahrenheitConversion}>
+          <a href="/" onClick={fahrenheitConversion} id="fahrenheitLink">
             °F
           </a>
         </div>
